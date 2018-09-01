@@ -8,7 +8,7 @@
 
 import bitstring
 
-from .message import BROADCAST_MAC, Message, little_endian
+from message import BROADCAST_MAC, Message, little_endian
 
 
 ##### DEVICE MESSAGES #####

@@ -4,9 +4,9 @@
 import math
 import os
 
-from .device import WorkflowException
-from .light import Light
-from .msgtypes import MultiZoneGetColorZones, MultiZoneSetColorZones, MultiZoneStateMultiZone, MultiZoneStateZone
+from device import WorkflowException
+from light import Light
+from msgtypes import MultiZoneGetColorZones, MultiZoneSetColorZones, MultiZoneStateMultiZone, MultiZoneStateZone
 
 
 class MultiZoneLight(Light):

@@ -1,8 +1,8 @@
 import os
 
-from .errors import WorkflowException, InvalidParameterException
-from .light import Light
-from .msgtypes import GetTileState64, StateTileState64, SetTileState64, GetDeviceChain, StateDeviceChain, SetUserPosition
+from errors import WorkflowException, InvalidParameterException
+from light import Light
+from msgtypes import GetTileState64, StateTileState64, SetTileState64, GetDeviceChain, StateDeviceChain, SetUserPosition
 from threading import Thread
 
 class TileChain(Light):

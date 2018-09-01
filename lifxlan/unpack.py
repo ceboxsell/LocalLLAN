@@ -5,8 +5,8 @@
 import binascii
 import struct
 
-from .message import HEADER_SIZE_BYTES, Message
-from .msgtypes import *
+from message import HEADER_SIZE_BYTES, Message
+from msgtypes import *
 
 
 # Creates a LIFX Message out of packed binary data

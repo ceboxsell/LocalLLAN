@@ -3,9 +3,9 @@
 # Author: Meghan Clark
 
 import os
-from .device import Device
-from .errors import InvalidParameterException, WorkflowException
-from .msgtypes import LightGet, LightGetInfrared, LightGetPower,\
+from device import Device
+from errors import InvalidParameterException, WorkflowException
+from msgtypes import LightGet, LightGetInfrared, LightGetPower,\
                       LightSetColor, LightSetInfrared, LightSetPower, LightSetWaveform,\
                       LightState, LightStateInfrared, LightStatePower
 

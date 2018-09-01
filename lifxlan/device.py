@@ -22,15 +22,15 @@ from datetime import datetime
 from socket import AF_INET, SOCK_DGRAM, SOL_SOCKET, SO_BROADCAST, SO_REUSEADDR, socket, timeout, gethostbyname_ex, gethostname
 from time import sleep, time
 import platform
-import netifaces as ni
+# import netifaces as ni
 
-from .errors import WorkflowException
-from .msgtypes import Acknowledgement, GetGroup, GetHostFirmware, GetInfo, GetLabel, GetLocation, GetPower, GetVersion, \
+from errors import WorkflowException
+from msgtypes import Acknowledgement, GetGroup, GetHostFirmware, GetInfo, GetLabel, GetLocation, GetPower, GetVersion, \
     GetWifiFirmware, GetWifiInfo, SERVICE_IDS, SetLabel, SetPower, StateGroup, StateHostFirmware, StateInfo, StateLabel, \
     StateLocation, StatePower, StateVersion, StateWifiFirmware, StateWifiInfo, str_map
-from .message import BROADCAST_MAC
-from .products import features_map, product_map, light_products
-from .unpack import unpack_lifx_message
+from message import BROADCAST_MAC
+from products import features_map, product_map, light_products
+from unpack import unpack_lifx_message
 
 DEFAULT_TIMEOUT = 1 #second
 DEFAULT_ATTEMPTS = 1
@@ -48,7 +48,9 @@ def get_broadcast_addrs():
             pass
     return broadcast_addrs
 
-UDP_BROADCAST_IP_ADDRS = get_broadcast_addrs()
+UDP_BROADCAST_IP_ADDRS = [u'255.255.255.255']
+
+#get_broadcast_addrs()
 UDP_BROADCAST_PORT = 56700
 
 class Device(object):
