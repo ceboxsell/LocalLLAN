@@ -1,16 +1,10 @@
-# lifxlan
+# My test version only. Don't use this, go to the original.
+If you found this I don't suggest using it. I modifed the original so that I could include it for testing in Mule and micropython.
+It is old etc but works for my use.
+Search github for LifxLan and use that.
 
 **lifxlan** is a Python 2 and Python 3 module for locally controlling LIFX devices (such as lightbulbs) over a LAN. It implements the [LIFX LAN Protocol](https://lan.developer.lifx.com/) specification. Supports white, color, multizone (LIFX Z, LIFX Beam), infrared (LIFX+), and chain (LIFX Tile) capabilities. Also supports group-based control of arbitrary sets of lights. Supports Unicode characters in names, groups, and locations.
 
-## How to Install
-
-To get the latest stable release:
-
-`sudo pip install lifxlan`
-
-However, to be guaranteed to get the most recent features and fixes you can install from source with:
-
-`sudo python setup.py install`
 
 ## Run
 
